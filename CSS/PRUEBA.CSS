@@ -1,0 +1,143 @@
+.form {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+    width: 300px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 30px 30px -30px rgba(27, 26, 26, 0.315);
+  }
+  
+  .form .title {
+    color: royalblue;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .form input {
+    outline: 0;
+    border: 1px solid rgb(219, 213, 213);
+    padding: 8px 14px;
+    border-radius: 8px;
+    width: 100%;
+    height: 50px;
+  }
+  
+  .form textarea {
+    border-radius: 8px;
+    height: 100px;
+    width: 100%;
+    resize: none;
+    outline: 0;
+    padding: 8px 14px;
+    border: 1px solid rgb(219, 213, 213);
+  }
+  
+  .form button {
+    align-self: flex-end;
+    padding: 8px;
+    outline: 0;
+    border: 0;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: royalblue;
+    color: #fff;
+    cursor: pointer;
+  }
+    
+  
+
+  /* REDES SOCIALES */
+  /* From Uiverse.io by elisapi */ 
+.card {
+    width: fit-content;
+    height: fit-content;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    gap: 20px;
+  }
+  
+  /* for all social containers*/
+  .socialContainer {
+    width: 52px;
+    height: 52px;
+    background-color: rgb(65, 29, 131);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition-duration: 0.3s;
+    border-radius: 30px;
+  }
+  /* instagram*/
+  .containerOne:hover {
+    background-color: #d62976;
+    transition-duration: 0.3s;
+    transform: scale(1.2);
+  }
+  /* twitter*/
+  .containerTwo:hover {
+    background-color: #00acee;
+    transition-duration: 0.3s;
+    transform: scale(1.2);
+  }
+  /* linkdin*/
+  .containerThree:hover {
+    background-color: #0072b1;
+    transition-duration: 0.3s;
+    transform: scale(1.2);
+  }
+  /* Whatsapp*/
+  .containerFour:hover {
+    background-color: #128c7e;
+    transition-duration: 0.3s;
+    transform: scale(1.2);
+  }
+  
+  .socialContainer:active {
+    transform: scale(0.9);
+    transition-duration: 0.3s;
+  }
+  
+  .socialSvg {
+    width: 17px;
+  }
+  
+  .socialSvg path {
+    fill: rgb(255, 255, 255);
+  }
+  
+  .socialContainer:hover .socialSvg {
+    animation: slide-in-top 0.3s both;
+  }
+  
+  @keyframes slide-in-top {
+    0% {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+  
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  
+
+
+
+
+  

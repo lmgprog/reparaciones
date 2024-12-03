@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reparación de Aires Acondicionados</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/CSS/PRUEBA.CSS">
+</head>
+<body>
+    <header class="main-header">
+        <div class="snowfall"></div> <!-- Contenedor para los copos de nieve -->
+        <div class="header-content">
+            <h1>Reparación de Aires Acondicionados</h1>
+            <p>Confía en expertos para mantener tu hogar fresco y confortable</p>
+            <a href="#services" class="cta-button">Conoce Más</a>
+
+        </div>
+    </header>
+
+
+    
+
+<!-- Sección Sobre Nosotros -->
+<section id="about" class="section" style="background-color: #ffffff; color: #333; padding: 80px 0;">
+    <div class="container about-container" style="display: flex; align-items: center; gap: 20px;">
+        <!-- Imagen de la sección -->
+        <div class="about-image" style="flex: 1;">
+            <img src="images/sobre_nosotros.jpg" alt="Sobre Nosotros" style="height: 600px; width: 500PX; object-fit: cover; border-radius: 10px;">
+        </div>
+        <!-- Contenido de la sección -->
+        <div class="about-content" style="flex: 1;">
+            <h2 class="section-title">Sobre Nosotros</h2>
+            <p class="about-text">
+                Somos líderes en servicios de reparación, mantenimiento e instalación de aires acondicionados en Argentina.
+                Con más de 10 años de experiencia, nuestro equipo está compuesto por técnicos certificados que se 
+                dedican a ofrecer soluciones personalizadas y de alta calidad.
+            </p>
+            <p class="about-text">
+                Nuestro objetivo es brindarte el mejor servicio para que disfrutes de la comodidad en tu hogar o lugar de trabajo.
+                Confía en nosotros para mantener tus equipos funcionando como nuevos.
+            </p>
+        </div>
+    </div>
+</section>
+
+<style>
+/* Estilo para la sección Sobre Nosotros */
+#about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 0; /* Añadir espacio alrededor de la sección */
+    background-color: #d60000;
+    color: #ff0000;
+}
+#about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 0; /* Añadir espacio alrededor de la sección */
+    background-color: #d60000;
+    color: #ff0000;
+}
+
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-image {
+    flex: 1;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 500px; /* Ancho máximo de la imagen */
+    height: auto; /* Mantiene proporción */
+    border-radius: 10px; /* Esquinas redondeadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra elegante */
+    clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%); /* Corte diagonal */
+    object-fit: cover; /* Ajusta la imagen al contenedor */
+}
+
+.about-content {
+    flex: 1; /* Ocupa el espacio restante */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra verticalmente el texto */
+    text-align: left; /* Alineación a la izquierda */
+    padding-left: 20px; /* Espaciado entre la imagen y el texto */
+}
+
+.about-content .section-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #222;
+    font-weight: bold;
+}
+
+.about-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 20px;
+}
+</style>
+
+<!-- Sección de Servicios -->
+<section id="services" class="section" style="padding: 60px 0; background: #f4f4f4;">
+    <div class="container">
+        <h2 class="section-title">Nuestros Servicios</h2>
+        <div class="grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
+            <!-- Servicio 1 -->
+            <div class="service" data-aos="fade-up" style="background: #fff; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); padding: 20px; border-radius: 8px; transition: transform 0.3s ease-in-out;">
+                <img src="images/aire.png" alt="Instalación de Aires" class="service-img" style="width: 80px; height: 80px; margin-bottom: 15px;">
+                <h3>Instalación</h3>
+                <p>Garantizamos una instalación eficiente y segura de todo tipo de aires acondicionados.</p>
+                <div style="text-align: center; margin-top: 15px;">
+                    <button class="btn" onclick="openModal('modal1')">Ver Más</button>
+                </div>
+            </div>
+            <!-- Servicio 2 -->
+            <div class="service" data-aos="fade-up" data-aos-delay="200" style="background: #fff; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); padding: 20px; border-radius: 8px; transition: transform 0.3s ease-in-out;">
+                <img src="images/mantenimiento.png" alt="Mantenimiento de Aires" class="service-img" style="width: 80px; height: 80px; margin-bottom: 15px;">
+                <h3>Mantenimiento</h3>
+                <p>Realizamos mantenimiento periódico para asegurar un rendimiento óptimo de tu equipo.</p>
+                <div style="text-align: center; margin-top: 15px;">
+                    <button class="btn" onclick="openModal('modal2')">Ver Más</button>
+                </div>
+            </div>
+            <!-- Servicio 3 -->
+            <div class="service" data-aos="fade-up" data-aos-delay="400" style="background: #fff; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); padding: 20px; border-radius: 8px; transition: transform 0.3s ease-in-out;">
+                <img src="images/reparacion.png" alt="Reparación de Aires" class="service-img" style="width: 80px; height: 80px; margin-bottom: 15px;">
+                <h3>Reparación</h3>
+                <p>Reparamos fallas técnicas con rapidez y precisión, alargando la vida útil de tus equipos.</p>
+                <div style="text-align: center; margin-top: 15px;">
+                    <button class="btn" onclick="openModal('modal3')">Ver Más</button>  
+                </div>
+            </div>
+            <!-- Servicio 4 -->
+            <div class="service" data-aos="fade-up" data-aos-delay="600" style="background: #fff; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); padding: 20px; border-radius: 8px; transition: transform 0.3s ease-in-out;">
+                <img src="images/asesoramiento.png" alt="Asesoramiento Técnico" class="service-img" style="width: 80px; height: 80px; margin-bottom: 15px;">
+                <h3>Asesoramiento Técnico</h3>
+                <p>Te brindamos asesoramiento personalizado para elegir el equipo adecuado según tus necesidades.</p>
+                <div style="text-align: center; margin-top: 15px;">
+                    <button class="btn" onclick="openModal('modal4')">Ver Más</button>  
+                </div>
+            </div>
+            <!-- Servicio 5 -->
+            <div class="service" data-aos="fade-up" data-aos-delay="800" style="background: #fff; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); padding: 20px; border-radius: 8px; transition: transform 0.3s ease-in-out;">
+                <img src="images/limpieza.png" alt="Limpieza de Equipos" class="service-img" style="width: 80px; height: 80px; margin-bottom: 15px;">
+                <h3>Limpieza de Equipos</h3>
+                <p>Ofrecemos servicios de limpieza profunda para mejorar el rendimiento y la eficiencia energética de tus equipos.</p>
+                <div style="text-align: center; margin-top: 15px;">
+                    <button class="btn" onclick="openModal('modal5')">Ver Más</button>  
+                </div>
+            </div>
+            <!-- Servicio 6 -->
+            <div class="service" data-aos="fade-up" data-aos-delay="1000" style="background: #fff; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); padding: 20px; border-radius: 8px; transition: transform 0.3s ease-in-out;">
+                <img src="images/emergencia.png" alt="Atención de Emergencias" class="service-img" style="width: 80px; height: 80px; margin-bottom: 15px;">
+                <h3>Atención de Emergencias</h3>
+                <p>Resolvemos problemas críticos con rapidez, disponibles las 24 horas para emergencias inesperadas.</p>
+                <div style="text-align: center; margin-top: 15px;">
+                    <button class="btn" onclick="openModal('modal6')">Ver Más</button>  
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+  
+
+
+    <script>
+        // Configuración de los copos de nieve
+        const snowContainer = document.querySelector('.snowfall');
+        const numSnowflakes = 100; // Número de copos
+    
+        // Crear copos de nieve
+        for (let i = 0; i < numSnowflakes; i++) {
+            const snowflake = document.createElement('div');
+            snowflake.classList.add('snowflake');
+            snowflake.textContent = '❄'; // Icono del copo de nieve
+            snowflake.style.left = Math.random() * 100 + 'vw'; // Posición horizontal aleatoria
+            snowflake.style.fontSize = Math.random() * 10 + 10 + 'px'; // Tamaño aleatorio
+            snowflake.style.animationDuration = Math.random() * 5 + 5 + 's'; // Duración aleatoria de la caída
+            snowflake.style.animationDelay = Math.random() * 5 + 's'; // Retraso aleatorio
+    
+            // Asignar la clase "shiny" aleatoriamente a algunos copos
+            if (Math.random() < 0.2) { // 20% de probabilidad de ser brillante
+                snowflake.classList.add('shiny');
+            }
+    
+            snowContainer.appendChild(snowflake);
+        }
+    </script>
+    
+    
+    
+    <!-- Navegación -->
+    <nav class="main-nav">
+
+        
+        <ul>
+            <li><a href="#services">Servicios</a></li>
+            <li><a href="#about">Sobre Nosotros</a></li>
+            <li><a href="#contact">Contacto</a></li>
+            <li><a href="#gallery">Galería</a></li>
+        </ul>
+    </nav>
+
+    
+
+
+
+
+<!-- Sección de Contacto -->
+<section id="contact" class="section" style="padding: 60px 0; background: #fff;">
+    <div class="container">
+        <h2>Contáctanos</h2>
+        <p>
+            ¿Tienes alguna consulta o necesitas ayuda con algo? ¡Estamos aquí para ayudarte! Nuestro equipo de expertos está dispuesto a responder tus preguntas y resolver tus problemas de manera rápida y eficiente.
+        </p>
+        <h3>Forma de Contacto</h3>
+        <p>Puedes contactarnos de varias maneras:</p>
+        <ul>
+            <li><strong>Teléfono:</strong> +54 11 5555-5555</li>
+            <li><strong>Horario de atención:</strong> Lunes a viernes, 9:00 am a 6:00 pm (UTC-3)</li>
+            <li><strong>Correo Electrónico:</strong> contacto@airesreparacion.com</li>
+            <li><strong>Respuesta a correos electrónicos:</strong> Nuestro equipo responderá dentro de las 24 horas hábiles.</li>
+            <li><strong>Dirección:</strong> Calle Falsa 123, Buenos Aires, Argentina</li>
+            <li><strong>Horario de atención presencial:</strong> Lunes a viernes, 9:00 am a 6:00 pm (UTC-3)</li>
+        </ul>
+        <h3>WhatsApp</h3>
+        <p>
+        <p>O escríbenos directamente a través de nuestro WhatsApp:</p>
+        <a href="https://wa.me/5491155555555" class="contact-whatsapp" style="display: inline-block; background: #25D366; color: white; padding: 15px 25px; border-radius: 50px; text-decoration: none; font-weight: bold;">Iniciar Chat</a>
+       
+        
+    </div>
+</section>
+
+
+<!-- Galería de Fotos -->
+<section id="gallery" class="section" style="padding: 60px 0; background: #f9f9f9;">
+    <div class="container">
+        <h2 class="section-title">Galería de Fotos</h2>
+        <p>Explora algunos de nuestros proyectos recientes:</p>
+        <div id="image-container" class="gallery-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 20px;">
+            <img src="images/FONDO.jpg" alt="Proyecto 1" class="gallery-img" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease-in-out;">
+            <img src="images/FONDO.jpg" alt="Proyecto 2" class="gallery-img" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease-in-out;">
+            <img src="images/FONDO.jpg" alt="Proyecto 3" class="gallery-img" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease-in-out;">
+            <img src="images/FONDO.jpg" alt="Proyecto 4" class="gallery-img" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease-in-out;">
+        </div>
+    </div>
+</section>
+
+<!-- CSS adicional -->
+<style>
+    .section-title {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 30px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: #333;
+    }
+    
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 30px;
+        margin-top: 40px;
+    }
+
+    .service img {
+        width: 80px;
+        margin-bottom: 20px;
+    }
+
+    .service:hover {
+        transform: translateY(-10px);
+    }
+
+    .about-text {
+        font-size: 1.2rem;
+        line-height: 1.6;
+        color: #333;
+    }
+
+    .contact-info-text {
+        font-size: 1.2rem;
+        color: #333;
+        margin-bottom: 20px;
+    }
+
+    .gallery-img:hover {
+        transform: scale(1.05);
+    }
+
+    .gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 15px;
+    }
+
+    .contact-whatsapp {
+        background-color: #25D366;
+        color: white;
+        padding: 15px 25px;
+        border-radius: 50px;
+        font-weight: bold;
+        text-decoration: none;
+        display: inline-block;
+        margin-top: 20px;
+    }
+
+    .contact-whatsapp:hover {
+        background-color: #128C7E;
+    }
+</style>
+<section id="brands" class="section">
+    <div class="container">
+        <h2>Marcas con las que trabajamos</h2>
+        <p>Trabajamos con las mejores marcas para ofrecerte productos de alta calidad y confianza.</p>
+        <div class="brands-grid">
+            <div class="brand" data-aos="fade-up">
+                <img src="images/marcas/LG_logo_(2014).svg.png" alt="Marca 1">
+            </div>
+            <div class="brand" data-aos="fade-up" data-aos-delay="200">
+                <img src="images/marcas/Mitsubishi_logo.svg" alt="Marca 2">
+            </div>
+            <div class="brand" data-aos="fade-up" data-aos-delay="400">
+                <img src="images/marcas/Samsung_Logo.svg.png" alt="Marca 3">
+            </div>
+            <div class="brand" data-aos="fade-up" data-aos-delay="600">
+                <img src="images/marcas/LG_logo_(2014).svg.png" alt="Marca 4">
+            </div>
+            <div class="brand" data-aos="fade-up">
+                <img src="images/marcas/LG_logo_(2014).svg.png" alt="Marca 1">
+            </div>
+            <div class="brand" data-aos="fade-up" data-aos-delay="200">
+                <img src="images/marcas/Mitsubishi_logo.svg" alt="Marca 2">
+            </div>
+            <div class="brand" data-aos="fade-up" data-aos-delay="400">
+                <img src="images/marcas/Samsung_Logo.svg.png" alt="Marca 3">
+            </div>
+            <div class="brand" data-aos="fade-up" data-aos-delay="600">
+                <img src="images/marcas/LG_logo_(2014).svg.png" alt="Marca 4">
+            </div>
+            <div class="brand" data-aos="fade-up" data-aos-delay="600">
+                <img src="images/marcas/LG_logo_(2014).svg.png" alt="Marca 4">
+            </div>
+            <div class="brand" data-aos="fade-up" data-aos-delay="600">
+                <img src="images/marcas/LG_logo_(2014).svg.png" alt="Marca 4">
+            </div>
+            <div class="brand" data-aos="fade-up" data-aos-delay="600">
+                <img src="images/marcas/LG_logo_(2014).svg.png" alt="Marca 4">
+            </div>
+            <div class="brand" data-aos="fade-up" data-aos-delay="600">
+                <img src="images/marcas/LG_logo_(2014).svg.png" alt="Marca 4">
+            </div>
+            <div class="brand" data-aos="fade-up" data-aos-delay="600">
+                <img src="images/marcas/LG_logo_(2014).svg.png" alt="Marca 4">
+            </div>
+            <div class="brand" data-aos="fade-up" data-aos-delay="600">
+                <img src="images/marcas/LG_logo_(2014).svg.png" alt="Marca 4">
+            </div>
+            <div class="brand" data-aos="fade-up" data-aos-delay="600">
+                <img src="images/marcas/LG_logo_(2014).svg.png" alt="Marca 4">
+            </div>
+            
+        </div>
+    </div>
+
+    
+</section>
+
+<style>
+    /* Estilo para la nueva sección de Marcas */
+    #brands {
+        background-color: #f4f4f4;
+        padding: 60px 0;
+    }
+
+    #brands h2 {
+        text-align: center;
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+        font-weight: bold;
+        color: #333;
+    }
+
+    #brands p {
+        text-align: center;
+        font-size: 1.2rem;
+        margin-bottom: 40px;
+        color: #666;
+    }   
+
+    .brands-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+        justify-items: center;
+    }
+
+    .brand img {
+        width: 150px; /* Ancho predeterminado */
+        height: 100px; /* Alto predeterminado */
+        object-fit: contain; /* Asegura que la imagen se ajuste sin distorsión */
+        transition: transform 0.3s ease, filter 0.3s ease;
+    }
+
+    .brand img:hover {
+        transform: scale(1.1);
+        filter: brightness(0.9);
+    }
+</style>
+
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <p>© 2024 Reparación de Aires Acondicionados. Todos los derechos reservados.</p>
+        </div>
+
+
+</div>
+
+    </footer>
+
+    
+    <!-- WhatsApp Icon -->
+    <a href="https://wa.me/5491155555555" class="whatsapp-float" target="_blank">
+        <img src="images/whats.png" alt="WhatsApp">
+    </a>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init(); // Iniciar animaciones
+    </script>
+
+<style>
+ 
+        .btn {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    .btn:hover {
+        background-color: #0056b3;
+    }
+    /* Modal Styles */
+    .modal {
+        display: none; 
+        position: fixed; 
+        z-index: 1; 
+        left: 0;
+        top: 0;
+        width: 100%; 
+        height: 100%; 
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.5); 
+    }
+    .modal-content {
+        background-color: white;
+        margin: 15% auto; 
+        padding: 20px;
+        border-radius: 10px;
+        width: 80%;
+        max-width: 500px;
+        text-align: center;
+    }
+    .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+    .close:hover,
+    .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+</style>
+
+
+
+
+<!-- modales -->
+
+    <!-- Modal 1 -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal1')">&times;</span>
+            <h2>Instalaciones</h2>
+            <img src="images/modal/instalacion.jpg" alt="Instalación" style="width: 100%; max-width: 100%;">
+            <p style="text-align: justify;">"En nuestra empresa, nos especializamos en ofrecer un servicio de instalación de aires acondicionados de alta calidad. Nos aseguramos de que cada instalación se realice de manera eficiente, profesional y segura, garantizando un rendimiento óptimo de tus equipos. Nuestros técnicos altamente capacitados utilizan herramientas de última tecnología y cumplen con todas las normativas de seguridad, brindando soluciones rápidas y efectivas.
+
+                Nos adaptamos a las necesidades específicas de cada cliente, ya sea para instalaciones residenciales, comerciales o industriales. Ya sea que necesites instalar un equipo de aire acondicionado split, de ventana o central, nos encargamos de todo el proceso, desde la evaluación del lugar de instalación hasta la puesta en marcha del sistema.
+                
+                Además, ofrecemos asesoramiento personalizado para ayudarte a elegir el equipo adecuado según el tamaño del espacio y las características del lugar, asegurando una climatización eficiente y ahorros en energía. Con nuestra garantía de instalación, puedes confiar en que tu equipo funcionará perfectamente durante años, sin preocupaciones.
+                
+                Si necesitas una instalación sin complicaciones y con resultados duraderos, no dudes en contactarnos. ¡Estamos aquí para ayudarte a disfrutar de un ambiente cómodo y fresco durante todo el año!"</p>
+        </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal2')">&times;</span>
+            <h2>Mantenimiento</h2>
+            <img src="/images/modal/mantenimiento.jpg" alt="Mantenimiento" style="width: 100%; max-width: 100%;">
+            <p style="text-align: justify;">"El mantenimiento periódico de tu aire acondicionado es esencial para asegurar su funcionamiento óptimo y prolongar su vida útil. En nuestra empresa, ofrecemos servicios de mantenimiento completos y personalizados, diseñados para mantener tu equipo en las mejores condiciones posibles. Sabemos que un aire acondicionado que no funciona correctamente puede afectar la comodidad de tu hogar o tu lugar de trabajo, por lo que nos comprometemos a realizar revisiones regulares para detectar y corregir cualquier problema antes de que se convierta en una falla costosa.
+
+                Nuestro servicio incluye la limpieza y revisión de los componentes clave, como filtros, serpentines, y condensadores, además de la verificación del sistema eléctrico y el nivel de refrigerante. También nos aseguramos de que tu equipo esté funcionando con la máxima eficiencia energética, lo que no solo mejora el rendimiento, sino que también puede reducir tus facturas de energía.
+                
+                El mantenimiento preventivo es una inversión que puede ahorrarte dinero a largo plazo, evitando reparaciones inesperadas y garantizando que tu aire acondicionado siga funcionando correctamente durante toda la temporada. Nuestro equipo de técnicos altamente capacitados está disponible para realizar mantenimientos según tus necesidades, ya sea de manera anual, semestral o con la frecuencia que prefieras.
+                
+                No pongas en riesgo el rendimiento de tu equipo: ¡Contáctanos hoy mismo para programar tu mantenimiento y mantener tu aire acondicionado en perfectas condiciones durante todo el año!"</p>
+        </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal3')">&times;</span>
+            <h2>Reparaciones</h2>
+            <img src="/images/modal/reparaciones.jpg" alt="Reparación" style="width: 100%; max-width: 100%;">
+            <p style="text-align: justify;">"En nuestra empresa, nos especializamos en la reparación de aires acondicionados, abordando rápidamente cualquier falla técnica que pueda surgir. Sabemos lo importante que es mantener tus equipos funcionando de manera eficiente, especialmente en los días más calurosos, por lo que nos comprometemos a ofrecer un servicio de reparación preciso, profesional y veloz. Nuestro equipo de técnicos está altamente capacitado para diagnosticar y solucionar cualquier tipo de problema, desde fallas en el sistema eléctrico hasta problemas con los compresores o la fuga de refrigerante.
+
+                Realizamos reparaciones de alta calidad utilizando repuestos originales y herramientas de última tecnología, asegurando que tu equipo quede como nuevo. Nos encargamos de todas las marcas y modelos, y garantizamos que cada reparación sea ejecutada con el máximo cuidado y atención a los detalles. Además, trabajamos con plazos cortos, para que tu aire acondicionado vuelva a funcionar lo antes posible y puedas disfrutar de un ambiente confortable sin demoras.
+                
+                Una reparación bien hecha no solo resuelve el problema de inmediato, sino que también prolonga la vida útil de tu equipo, ayudando a prevenir fallas futuras. Nuestro objetivo es ofrecer soluciones duraderas y confiables, que te permitan seguir disfrutando de un rendimiento eficiente y una calidad de aire óptima. Si tu aire acondicionado presenta algún inconveniente, no dudes en contactarnos: ¡Estamos aquí para ayudarte con la reparación que necesitas!"</p>
+        </div>
+    </div>
+
+     <!-- Modal 4 -->
+     <div id="modal4" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal4')">&times;</span>
+            <h2>Asesoramiento Técnico</h2>
+            <img src="/images/modal/asesoramiento.jpg" alt="Reparación" style="width: 100%; max-width: 100%;">
+            <p style="text-align: justify;">"En nuestra empresa, entendemos que elegir el aire acondicionado adecuado para tu hogar o empresa puede ser una tarea compleja, debido a la gran variedad de modelos y opciones disponibles en el mercado. Por eso, te ofrecemos un servicio de asesoramiento personalizado, pensado para guiarte en la selección del equipo que mejor se adapte a tus necesidades y presupuesto.
+
+                Nuestro equipo de expertos está preparado para evaluar las características de tu espacio, como el tamaño de la habitación, la cantidad de personas, el nivel de exposición solar y tus preferencias personales, entre otros factores. Con base en esta evaluación, te ayudaremos a elegir el aire acondicionado ideal, ya sea para un ambiente pequeño, grande o para espacios comerciales, asegurando un rendimiento eficiente y un consumo energético bajo.
+                
+                Además, te brindamos información detallada sobre las últimas tecnologías disponibles, como los sistemas inverter, que optimizan el consumo de energía y ofrecen un confort continuo. También te asesoramos en cuanto a la potencia, características de filtrado, y opciones de conectividad, para que puedas tomar una decisión informada y sin sorpresas.
+                
+                No importa si es la primera vez que compras un aire acondicionado o si estás buscando reemplazar uno antiguo. Estamos aquí para ofrecerte todo el conocimiento y apoyo que necesites, garantizando que el equipo que elijas sea el más adecuado para tu situación. Contáctanos y recibe el mejor asesoramiento para disfrutar de un ambiente fresco y cómodo durante todo el año."
+        </div>
+    </div>
+
+     <!-- Modal 5 -->
+     <div id="modal5" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal5')">&times;</span>
+            <h2>Limpieza de Equipos</h2>
+            <img src="/images/modal/limpieza.png" alt="Reparación" style="width: 100%; max-width: 100%;">
+            <p style="text-align: justify;">"Un aire acondicionado limpio es fundamental para garantizar su rendimiento y alargar la vida útil de los equipos. Nuestro servicio de limpieza profunda está diseñado para eliminar la acumulación de polvo, suciedad y bacterias que pueden afectar el funcionamiento de tu equipo y su eficiencia energética.
+
+                A lo largo del tiempo, los filtros y conductos de aire de los aires acondicionados acumulan suciedad que obstruye el flujo de aire y puede hacer que el equipo trabaje más de lo necesario, lo que genera un aumento en el consumo de energía. Con nuestra limpieza profunda, aseguramos que tu equipo funcione de manera óptima, mejorando su capacidad de enfriamiento y reduciendo el consumo de energía.
+                
+                Nuestro proceso de limpieza incluye la desinfección de los filtros, la limpieza de las bobinas del evaporador y condensador, y la inspección del sistema de drenaje para evitar obstrucciones. Además, te ofrecemos un servicio detallado para prevenir malos olores y eliminar gérmenes, bacterias y hongos, contribuyendo a un aire más saludable para ti y los tuyos.
+                
+                Realizamos estos servicios de manera rápida y profesional, asegurándonos de que tu equipo quede como nuevo, sin riesgos ni inconvenientes. Es importante realizar una limpieza regular para mantener tu aire acondicionado funcionando de manera eficiente y para evitar problemas costosos a largo plazo. Confía en nuestros expertos para que tu equipo esté siempre en las mejores condiciones."</p>
+        </div>
+    </div>
+
+
+     <!-- Modal 6 -->
+     <div id="modal6" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal6')">&times;</span>
+            <h2>Atención de Emergencias</h2>
+            <img src="images/modal/emergencia.png" alt="Reparación" style="width: 100%; max-width: 100%;">
+            <p style="text-align: justify;">"Resolvemos problemas críticos con rapidez, disponibles las 24 horas para emergencias inesperadas. Sabemos que los inconvenientes con tus equipos de aire acondicionado pueden ocurrir en cualquier momento, y es por eso que ofrecemos un servicio de emergencia las 24 horas del día, los 7 días de la semana. Nuestro equipo de expertos está listo para atender cualquier falla o situación imprevista que afecte el funcionamiento de tus sistemas de aire acondicionado, brindándote una solución rápida y eficaz para que tu comodidad no se vea comprometida en ningún momento. Ya sea que tu equipo deje de enfriar, presente ruidos extraños o cualquier otro fallo técnico, estamos aquí para ayudarte de inmediato y con la máxima eficiencia."</p>
+        </div>
+    </div>
+
+
+
+    <script>
+        function openModal(id) {
+            document.getElementById(id).style.display = 'block';
+        }
+        function closeModal(id) {
+            document.getElementById(id).style.display = 'none';
+        }
+    </script>
+</body>
+</html>
