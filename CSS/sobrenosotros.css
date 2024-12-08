@@ -1,0 +1,139 @@
+
+
+/* Estilo para la sección Sobre Nosotros */
+#about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F7F7F7;
+    padding: 80px 0; /* Añadir espacio alrededor de la sección */
+
+}
+
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-image {
+    flex: 1;
+}
+
+.about-image img {
+    width: 300px;
+    max-width: 500px; /* Ancho máximo de la imagen */
+    height: auto; /* Mantiene proporción */
+    border-radius: 20px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra elegante */
+    object-fit: cover; /* Ajusta la imagen al contenedor */
+}
+
+.about-content {
+    flex: 1; /* Ocupa el espacio restante */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra verticalmente el texto */
+    text-align: left; /* Alineación a la izquierda */
+    padding-left: 20px; /* Espaciado entre la imagen y el texto */
+}
+
+.about-content .section-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #222;
+    font-weight: bold;
+}
+
+.about-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Media query para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+        text-align: center; /* Centra el texto */
+    }
+
+    .about-image {
+        margin-bottom: 20px; /* Agrega un margen debajo de la imagen */
+    }
+
+    .about-image img {
+        max-width: 100%; /* La imagen debe ocupar el 100% del ancho */
+        height: auto; /* Mantiene proporción en todos los dispositivos */
+    }
+
+    .about-content {
+        padding-left: 0; /* Elimina el espacio a la izquierda */
+        padding-right: 0; /* Elimina el espacio a la derecha */
+    }
+}
+
+
+.container-carta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .card_box-carta {
+    width: 350px;
+    height: 450px;
+    border-radius: 20px;
+    background: url('/images/FONDO.jpg') no-repeat center center/cover;
+    position: relative;
+    box-shadow: 0 25px 50px rgba(0,0,0,0.55);
+    cursor: pointer;
+    transition: all .3s;
+  }
+  
+
+  .card_box-carta span {
+    position: absolute;
+    overflow: hidden;
+    width: 150px;
+    height: 150px;
+    top: -10px;
+    left: -10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .card_box-carta span::before {
+    content: 'NHRefrigeracion';
+    position: absolute;
+    width: 150%;
+    height: 40px;
+    background-image: linear-gradient(45deg, #ff6547 0%, #ffb144  51%, #ff7053  100%);
+    transform: rotate(-45deg) translateY(-20px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+   
+    box-shadow: 0 5px 10px rgba(0,0,0,0.23);
+  }
+  
+  .card_box-carta span::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    bottom: 0;
+    left: 0;
+    height: 10px;
+    z-index: -1;
+    box-shadow: 140px -140px #cc3f47;
+    background-image: linear-gradient(45deg, #FF512F 0%, #F09819  51%, #FF512F  100%);
+  }
+  

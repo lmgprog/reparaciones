@@ -1,0 +1,101 @@
+
+/* Estilos generales para la sección "why-choose-us" */
+.why-choose-us {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    padding: 60px 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.why-choose-us__title {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.why-choose-us__content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+/* Imagen central */
+.why-choose-us__image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.why-choose-us__image img {
+    width: auto;
+    height: 500px; /* Puedes ajustar este valor a la altura que desees */
+    object-fit: cover;
+    border-radius: 12px;
+  
+   
+}
+
+/* Estilos de las tarjetas */
+.why-choose-us__cards-left, .why-choose-us__cards-right {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 250px;
+    height: 500px; /* La altura de las tarjetas se ajusta a la altura de la imagen */
+    justify-content: space-between; /* Distribuye las tarjetas para que ocupen el mismo espacio */
+
+}
+
+.why-choose-us__card {
+    background-color: #fff;
+
+    border-radius: 12px;
+    padding: 50px;
+    text-align: center;
+  
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex: 1; /* Asegura que las tarjetas se estiren para ocupar el espacio disponible */
+}
+
+.why-choose-us__card-icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+    object-fit: contain;
+}
+
+.why-choose-us__card-text {
+    font-size: 1.1rem;
+    color: #555;
+    font-weight: 500;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .why-choose-us__content {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .why-choose-us__cards-left, .why-choose-us__cards-right {
+        gap: 20px;
+        width: 90%;
+        height: auto; /* El ajuste en móviles será automático */
+    }
+
+    .why-choose-us__image img {
+        max-width: 300px;
+        margin-bottom: 20px;
+    }
+
+    .why-choose-us__title {
+        font-size: 2rem;
+    }
+}
+
+
+

@@ -1,0 +1,347 @@
+/* BOODY DE LA PAGINA */
+/* Global styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    color: #333;
+    overflow-x: hidden;
+    
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Estilo general para la barra de navegación */
+.main-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    background-color: #333; /* Fondo oscuro */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para darle profundidad */
+    z-index: 9999; /* Asegura que se quede encima de otros elementos */
+    transition: background-color 0.3s ease; /* Transición suave */
+}
+
+/* Estilo para el logo */
+.main-nav .logo a {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+/* Efecto hover para el logo */
+.main-nav .logo a:hover {
+    color: #FFD700; /* Color dorado al pasar el ratón */
+}
+
+/* Estilo para los enlaces de navegación */
+.main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.main-nav li {
+    margin: 0;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: white; /* Color de los enlaces */
+    font-weight: 500;
+    font-size: 16px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Efecto hover en los enlaces */
+.main-nav a:hover {
+    color: #FFD700;
+    transform: scale(1.1); /* Efecto de aumento suave */
+}
+
+/* Estilo para el botón de menú (hamburguesa) */
+.menu-toggle {
+    display: none; /* Escondido por defecto */
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 10000;
+}
+
+/* Icono del botón hamburguesa */
+.hamburger-icon {
+    width: 25px;
+    height: 2px;
+    background-color: white;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.hamburger-icon::before,
+.hamburger-icon::after {
+    content: "";
+    width: 25px;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    transition: all 0.3s ease;
+}
+
+.hamburger-icon::before {
+    top: -8px;
+}
+
+.hamburger-icon::after {
+    top: 8px;
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+    /* Cambiar el diseño del menú a columna */
+    .main-nav ul {
+        display: none; /* Ocultamos la lista de enlaces por defecto */
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        left: 0;
+        background-color: #333;
+        padding: 20px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra para el menú desplegable */
+        border-top: 2px solid #FFD700; /* Línea dorada en la parte superior */
+    }
+
+    .main-nav ul.active {
+        display: flex; /* Mostramos el menú cuando esté activo */
+    }
+
+    .menu-toggle {
+        display: block; /* Mostramos el botón de menú solo en pantallas pequeñas */
+    }
+
+    /* Animación para el icono de hamburguesa cuando está activo */
+    .menu-toggle.active .hamburger-icon {
+        background-color: transparent; /* Oculta la barra central */
+    }
+
+    .menu-toggle.active .hamburger-icon::before {
+        transform: rotate(45deg);
+        top: 0;
+    }
+
+    .menu-toggle.active .hamburger-icon::after {
+        transform: rotate(-45deg);
+        top: 0;
+    }
+
+    /* Estilo para los enlaces en el menú desplegable */
+    .main-nav a {
+        font-size: 18px; /* Aumentamos el tamaño de la fuente en dispositivos móviles */
+        padding: 10px;
+        text-align: center;
+        width: 100%;
+        color: white;
+    }
+
+    .main-nav a:hover {
+        background-color: #444; /* Fondo oscuro al pasar el ratón sobre los enlaces */
+    }
+}
+
+
+
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+
+.service {
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    flex: 1 1 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+
+
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    z-index: 1000;
+}
+
+.whatsapp-float img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+
+/* Footer Styles */
+.main-footer {
+    background: #222;
+    color: #fff;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.footer-info h3 {
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+
+
+
+
+/* WhatsApp Icon */
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    z-index: 1000;
+}
+
+.whatsapp-float img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Cards */
+
+
+
+/* EFECTO MENSAJE HEADER */
+
+.header-content {
+    animation: fadeIn 2s ease-out;
+}
+
+/* BOTON HEADER */
+.cta-button {
+    margin-top: 20px;
+    padding: 10px 25px;
+    background: #00b0ff;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    font-size: 18px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+
+
+
+/* Animations  caida del texto del header*/
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Fondo de la cabecera */
+.main-header {
+    position: relative;
+    height: 100vh;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(0, 174, 255, 0.8)), url('/images/FONDO.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    overflow: hidden; /* Para mantener los copos dentro del área del header */
+}
+
+/* Contenedor de la nieve */
+.snowfall {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Evitar interacción con los copos */
+}
+
+/* Estilos de los copos individuales */
+.snowflake {
+    position: absolute;
+    top: -10%;
+    color: white;
+    opacity: 0.8;
+    animation: fall linear infinite;
+}
+
+.snowflake.shiny {
+    color: rgb(255, 255, 255); /* Color brillante */
+    opacity: 1; /* Totalmente visible */
+    text-shadow: 
+        0 0 8px rgba(255, 255, 0, 0.8), 
+        0 0 12px rgba(255, 255, 0, 0.6), 
+        0 0 16px rgba(255, 255, 255, 0.8);
+}
+
+
+
+/* Animación de caída */
+@keyframes fall {
+    0% {
+        transform: translateY(-10vh) rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(110vh) rotate(360deg);
+        opacity: 0.5;
+    }
+}
+
+
+
+/* Footer */
+.footer {
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+

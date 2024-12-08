@@ -1,0 +1,43 @@
+
+/* Servicio */
+.service {
+position: relative; /* Necesario para posicionar el corte diagonal */
+background: #fff;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+padding: 20px;
+border-radius: 8px;
+transition: transform 0.3s ease-in-out;
+}
+
+/* Efecto del corte diagonal en la esquina inferior derecha */
+.service .view-more {
+position: absolute;
+bottom: 0;
+right: 0;
+background: #FFD700; /* Color de fondo dorado */
+color: white; /* Color del texto */
+font-weight: bold;
+padding: 10px 20px;
+text-align: center;
+border-radius: 8px 8px 0 0; /* Esquinas redondeadas arriba */
+z-index: 1;
+clip-path: polygon(100% 0, 100% 100%, 0 100%); /* Crea el corte diagonal */
+}
+
+/* Efecto hover en la tarjeta */
+.service:hover {
+transform: translateY(-10px); /* Sube ligeramente al pasar el ratón */
+box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.service .view-more p {
+margin: 0;
+font-size: 16px;
+font-weight: bold;
+text-transform: uppercase;
+}
+
+/* Si quieres que el texto cambie al hacer hover */
+.service:hover .view-more {
+background: #d4af37; /* Color más oscuro al pasar el ratón */
+}
