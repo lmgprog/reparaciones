@@ -88,7 +88,7 @@
     width: 350px;
     height: 450px;
     border-radius: 20px;
-    background: url('/images/FONDO.jpg') no-repeat center center/cover;
+    background: url('https://raw.githubusercontent.com/lmgprog/reparaciones/refs/heads/main/images/FONDO.jpg') no-repeat center center/cover;
     position: relative;
     box-shadow: 0 25px 50px rgba(0,0,0,0.55);
     cursor: pointer;
