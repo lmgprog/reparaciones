@@ -18,9 +18,8 @@
     max-width: 1200px;
     margin: 0 auto;
 }
-
 .about-image {
-        max-width: 100%; /* La imagen no será más ancha que su contenedor */
+    max-width: 100%; /* La imagen no será más ancha que su contenedor */
     height: auto;    /* Mantiene la proporción de la imagen */
     display: block;  /* Elimina cualquier espacio extra debajo de la imagen */
     margin: 0 auto;  /* Centra la imagen dentro del contenedor */
@@ -28,12 +27,21 @@
 }
 
 .about-image img {
-    width: 300px;
-    max-width: 500px; /* Ancho máximo de la imagen */
-    height: auto; /* Mantiene proporción */
+    width: 300px;       /* Ancho base para pantallas grandes */
+    max-width: 500px;   /* Ancho máximo de la imagen */
+    height: auto;       /* Mantiene proporción */
     border-radius: 20px; /* Bordes redondeados */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra elegante */
-    object-fit: cover; /* Ajusta la imagen al contenedor */
+    object-fit: cover;  /* Ajusta la imagen al contenedor */
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+    .about-image img {
+        width: 100%;       /* Imagen ocupa todo el ancho del contenedor */
+        max-width: none;   /* Sin restricción de ancho máximo */
+        border-radius: 15px; /* Ajusta los bordes redondeados para pantallas pequeñas */
+    }
 }
 
 .about-content {
